@@ -1,8 +1,13 @@
 [alias]
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches
+  commit-time = commit --amend -m "'"$(date +%s)"'"
 [user]
   name = Jesse Carter
   email = jesse.r.carter@gmail.com
 [core]
   editor = vim
-  excludesfile = /home/jesse/.gitignore_global
+	excludesFile = ~/.gitignore
+[pull]
+	rebase = true
+[init]
+	defaultBranch = main
