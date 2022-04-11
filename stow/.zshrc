@@ -106,4 +106,12 @@ export EDITOR="$VISUAL"
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 
+# Cargo/Rust
 . "$HOME/.cargo/env"
+
+# Volta/Node
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+
+# McFly history searching
+eval "$(mcfly init zsh)"
