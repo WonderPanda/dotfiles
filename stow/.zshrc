@@ -72,6 +72,8 @@ plugins=(git docker docker-compose)
 
 source $ZSH/oh-my-zsh.sh
 
+alias vim=nvim
+
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
@@ -115,6 +117,15 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 
 # McFly history searching
 eval "$(mcfly init zsh)"
+export MCFLY_FUZZY=2
 
 # Starship
 eval "$(starship init zsh)"
+
+alias l='exa'
+alias la='exa -a'
+alias ll='exa -lah'
+alias ls='exa --color=auto'
+
+# k8s
+source <(kubectl completion zsh)
