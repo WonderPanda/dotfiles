@@ -5,7 +5,7 @@
   name = Jesse Carter
   email = jesse.r.carter@gmail.com
 [core]
-  editor = vim
+  editor = nvim 
 	excludesFile = ~/.gitignore
 [pull]
 	rebase = true

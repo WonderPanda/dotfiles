@@ -1,0 +1,15 @@
+let mapleader=" "
+
+set clipboard+=unnamed
+set clipboard+=ideaput
+
+nnoremap \e :e ~/.ideavimrc<CR>
+nnoremap \r :action IdeaVim.ReloadVimRc.reload<CR>
+
+set relativenumber
+set number
+
+set incsearch
+
+nnoremap <C-z> :action ToggleDistractionFreeMode<CR>
+nnoremap <C-t> :action ActivateTerminalToolWindow<CR>

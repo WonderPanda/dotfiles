@@ -127,5 +127,10 @@ alias la='exa -a'
 alias ll='exa -lah'
 alias ls='exa --color=auto'
 
+# Pulumi
+export PATH="$HOME/.pulumi/bin:$PATH"
+
 # k8s
 source <(kubectl completion zsh)
+
+alias vim='nvim'
