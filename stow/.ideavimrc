@@ -1,15 +1,24 @@
 let mapleader=" "
 
 set clipboard+=unnamed
-set clipboard+=ideaput
 
 nnoremap \e :e ~/.ideavimrc<CR>
-nnoremap \r :action IdeaVim.ReloadVimRc.reload<CR>
+nnoremap \r :source ~/.ideavimrc<CR>
 
 set relativenumber
 set number
 
+set scrolloff=5
 set incsearch
 
 nnoremap <C-z> :action ToggleDistractionFreeMode<CR>
 nnoremap <C-t> :action ActivateTerminalToolWindow<CR>
+nnoremap <C-|> :action SplitVertically<CR>
+nnoremap <leader><C-w> :close<CR>
+nnoremap <M-h> <C-w>h<CR>
+nnoremap <M-l> <C-w>l<CR>
+
+" Plugins
+Plug 'tpope/vim-commentary'
+set multiple-cursors
+set easymotion

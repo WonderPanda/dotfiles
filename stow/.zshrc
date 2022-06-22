@@ -118,6 +118,7 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 # McFly history searching
 eval "$(mcfly init zsh)"
 export MCFLY_FUZZY=2
+export MCFLY_RESULTS_SORT=LAST_RUN
 
 # Starship
 eval "$(starship init zsh)"
