@@ -11,6 +11,9 @@ set number
 set scrolloff=5
 set incsearch
 
+set commentary
+set surround
+
 nnoremap <C-z> :action ToggleDistractionFreeMode<CR>
 nnoremap <C-t> :action ActivateTerminalToolWindow<CR>
 nnoremap <C-|> :action SplitVertically<CR>
