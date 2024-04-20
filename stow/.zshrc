@@ -114,6 +114,8 @@ alias pbpaste='xclip -selection clipboard -o'
 # Volta/Node
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
+unset _VOLTA_TOOL_RECURSION
+export VOLTA_FEATURE_PNPM=1
 
 # McFly history searching
 eval "$(mcfly init zsh)"
@@ -132,6 +134,9 @@ alias ls='exa --color=auto'
 export PATH="$HOME/.pulumi/bin:$PATH"
 
 # k8s
-source <(kubectl completion zsh)
+# source <(kubectl completion zsh)
 
 alias vim='nvim'
+alias lg='lazygit'
+alias zj='zellij -l welcome'
+
